@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">loginAndroidTemplate</string>
+    <string name="welcome_message">welcome!</string>
+    <string name="log_in_button">log in</string>
+    <string name="sign_up_button">sign up</string>
+    <string name="access_list_button">access list</string>
+    <string name="log_out_button">log out</string>
+    <string name="login_button">login</string>
+    <string name="signup_button">create account</string>
+    <string name="password_hint">password</string>
+    <string name="email_hint">email</string>
+    <string name="confirm_password_hint">repeat password</string>
+    <string name="name_hint">name</string>
+    <string name="empty_name_message">please enter your name</string>
+    <string name="empty_email_message">please enter your email</string>
+    <string name="empty_password_message">please enter your password</string>
+    <string name="unmatched_passwords_message">passwords don\'t match</string>
+    <string name="account_created_message">\'s account has been succesfully created</string>
+    <string name="hello_message">hello</string>
+    <string name="wrong_password_message">wrong email/password</string>
+    <string name="email_title">email:</string>
+    <string name="date_title">date:</string>
+    <string name="isValid_title">valid:</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+</resources>
