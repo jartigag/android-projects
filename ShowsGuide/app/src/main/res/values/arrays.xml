@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shows">
+        <item>Serie1</item>
+        <item>Serie2</item>
+        <item>Serie3</item>
+        <item>Serie4</item>
+    </string-array>
+
+    <string-array name="Show1">
+        <item>Season1</item>
+        <item>Season2</item>
+        <item>Season3</item>
+    </string-array>
+
+    <string-array name="Show2">
+        <item>Season1</item>
+        <item>Season2</item>
+        <item>Season3</item>
+        <item>Season4</item>
+    </string-array>
+
+    <string-array name="Show3">
+        <item>Season1</item>
+        <item>Season2</item>
+        <item>Season3</item>
+        <item>Season4</item>
+    </string-array>
+
+</resources>
