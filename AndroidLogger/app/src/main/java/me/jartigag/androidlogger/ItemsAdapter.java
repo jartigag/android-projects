@@ -44,7 +44,7 @@ public class ItemsAdapter extends BaseAdapter {
         TextView tvDate = view.findViewById(R.id.tvDate);
         TextView tvEvent = view.findViewById(R.id.tvEvent);
 
-        tvDate.setText(new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(item.getDate()));
+        tvDate.setText(new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a").format(item.getDate()));
         tvEvent.setText(item.getEvent().toString());
 
         return view;
