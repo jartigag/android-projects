@@ -29,6 +29,7 @@ dependencies {
 
     compile 'com.android.support:design:26.1.0'
     compile 'org.greenrobot:greendao:3.2.2'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
 }
 
 greendao {
