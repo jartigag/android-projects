@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         lvItems.setAdapter(new ItemsAdapter(itemData));
 
-        com.getbase.floatingactionbutton.FloatingActionButton addItemFAB = findViewById(R.id.action_a);
+        com.getbase.floatingactionbutton.FloatingActionButton addItemFAB = findViewById(R.id.action_sport);
         addItemFAB.setOnClickListener(new FABClickListener(this,itemDao));
     }
 }

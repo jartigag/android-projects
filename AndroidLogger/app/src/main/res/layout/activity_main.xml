@@ -34,28 +34,31 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             fab:fab_addButtonColorNormal="@color/colorAccent"
+            fab:fab_addButtonColorPressed="@color/pink_pressed"
             fab:fab_addButtonPlusIconColor="@color/white"
+            fab:fab_labelStyle="@style/menu_labels_style"
             android:layout_marginBottom="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginEnd="16dp">
-            <!-- fab:fab_labelStyle="@style/menu_labels_style"
+            <!--
             fab:fab_addButtonColorPressed="@color/white_pressed"-->
 
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:id="@+id/action_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                fab:fab_colorNormal="@color/white"
-                fab:fab_title="Action A"
-                fab:fab_colorPressed="@color/white_pressed"/>
+                fab:fab_colorNormal="@color/orange"
+                fab:fab_title="Add another activity"
+                fab:fab_colorPressed="@color/orange_pressed"/>
 
             <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/action_b"
+                android:id="@+id/action_sport"
+                fab:fab_icon="@drawable/sport"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                fab:fab_colorNormal="@color/white"
-                fab:fab_title="Action with a very long name that won\'t fit on the screen"
-                fab:fab_colorPressed="@color/white_pressed"/>
+                fab:fab_colorNormal="@color/orange"
+                fab:fab_title="Add sport activity"
+                fab:fab_colorPressed="@color/orange_pressed"/>
 
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
     </RelativeLayout>
