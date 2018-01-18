@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.jartigag.androidlogger.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tvShortcuts"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyShortcut1"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivShorcut1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sport"/>
+
+                    <EditText
+                        android:id="@+id/etShortcut1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="45"
+                        android:textStyle="bold"
+                        android:hint="@string/etShortcut1"/>
+
+
+                    <EditText
+                        android:id="@+id/edLabelShorcut1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="55"
+                        android:textSize="13dp"
+                        android:hint="@string/lblFabShorcut1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyShortcut2"
+                android:background="@color/green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivShorcut1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sport"/>
+
+                <EditText
+                    android:id="@+id/etShortcut2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45"
+                    android:textStyle="bold"
+                    android:hint="@string/etShortcut2"/>
+
+
+                <EditText
+                    android:id="@+id/edLabelShorcut2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="55"
+                        android:textSize="13dp"
+                        android:hint="@string/lblFabShorcut2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyShortcut3"
+                android:background="@color/purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivShorcut3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sport"/>
+
+                <EditText
+                    android:id="@+id/etShortcut3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45"
+                    android:textStyle="bold"
+                    android:hint="@string/etShortcut3"/>
+
+
+                <EditText
+                    android:id="@+id/edLabelShorcut3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="55"
+                        android:textSize="13dp"
+                        android:hint="@string/lblFabShorcut3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Eventos que registrar:"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pantalla: encender/apagar"/>
+
+                <CheckBox
+                    android:id="@+id/cbCharger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cargador: conectar/desconectar"/>
+
+
+                <CheckBox
+                    android:id="@+id/cbHeadphones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auriculares: conectar/desconectar"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

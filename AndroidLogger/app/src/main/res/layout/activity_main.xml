@@ -40,24 +40,14 @@
             android:layout_marginBottom="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginEnd="16dp">
-            <!--
-            fab:fab_addButtonColorPressed="@color/white_pressed"-->
 
             <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/action_a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                fab:fab_colorNormal="@color/orange"
-                fab:fab_title="Add another activity"
-                fab:fab_colorPressed="@color/orange_pressed"/>
-
-            <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/action_sport"
+                android:id="@+id/fabShortcut1"
                 fab:fab_icon="@drawable/sport"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 fab:fab_colorNormal="@color/orange"
-                fab:fab_title="Add sport activity"
+                fab:fab_title="@string/lblFabShorcut1"
                 fab:fab_colorPressed="@color/orange_pressed"/>
 
         </com.getbase.floatingactionbutton.FloatingActionsMenu>

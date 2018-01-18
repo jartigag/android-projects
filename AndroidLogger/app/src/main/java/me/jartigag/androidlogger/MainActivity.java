@@ -1,10 +1,13 @@
 package me.jartigag.androidlogger;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import java.util.List;
@@ -44,7 +47,30 @@ public class MainActivity extends AppCompatActivity {
 
         lvItems.setAdapter(new ItemsAdapter(itemData));
 
-        com.getbase.floatingactionbutton.FloatingActionButton addItemFAB = findViewById(R.id.action_sport);
+        com.getbase.floatingactionbutton.FloatingActionButton addItemFAB = findViewById(R.id.fabShortcut1);
         addItemFAB.setOnClickListener(new FABClickListener(this,itemDao));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Infla el recurso menú, en la action bar
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        SharedPreferences settings = this.getSharedPreferences("Config", 0);
+        SharedPreferences.Editor editor = settings.edit();
+
+        if (id == R.id.settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.export) {
+            //todo
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -3,4 +3,13 @@
     <string name="add">Añadir</string>
     <string name="refresh">Refresca la lista</string>
     <string name="cancel">Cancelar</string>
+    <string name="settings">Ajustes</string>
+    <string name="export">Exportar...</string>
+    <string name="tvShortcuts">Añade tus actividades frecuentes a accesos directos:</string>
+    <string name="lblFabShorcut1">Añadir actividad física</string>
+    <string name="etShortcut1">Deporte</string>
+    <string name="etShortcut2">Desplazamiento</string>
+    <string name="etShortcut3">Comer</string>
+    <string name="lblFabShorcut2">Añadir desplazamiento</string>
+    <string name="lblFabShorcut3">Añadir comida</string>
 </resources>
