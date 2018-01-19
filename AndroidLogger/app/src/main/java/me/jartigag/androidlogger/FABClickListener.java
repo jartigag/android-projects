@@ -43,7 +43,7 @@ public class FABClickListener implements View.OnClickListener {
                 newItem.setEvent(edDialogText.getText().toString());
                 newItem.setDate(new Date());
                 itemDao.insert(newItem);
-                Toast.makeText(activity,R.string.refresh,Toast.LENGTH_SHORT).show();
+                Toast.makeText(activity, R.string.refresh,Toast.LENGTH_SHORT).show();
 
             }
         });

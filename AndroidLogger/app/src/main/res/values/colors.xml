@@ -14,5 +14,7 @@
     <color name="blue_semi_transparent">#805677fc</color>
     <color name="blue_semi_transparent_pressed">#80738ffe</color>
     <color name="green">#00cc00</color>
+    <color name="green_pressed">#01cc01</color>
     <color name="purple">#800080</color>
+    <color name="purple_pressed">#810181</color>
 </resources>

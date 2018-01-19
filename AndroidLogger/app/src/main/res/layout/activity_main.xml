@@ -50,6 +50,24 @@
                 fab:fab_title="@string/lblFabShorcut1"
                 fab:fab_colorPressed="@color/orange_pressed"/>
 
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabShortcut2"
+                fab:fab_icon="@drawable/commuting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/green"
+                fab:fab_title="@string/lblFabShorcut2"
+                fab:fab_colorPressed="@color/green_pressed"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabShortcut3"
+                fab:fab_icon="@drawable/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/purple"
+                fab:fab_title="@string/lblFabShorcut3"
+                fab:fab_colorPressed="@color/purple_pressed"/>
+
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
     </RelativeLayout>
 
