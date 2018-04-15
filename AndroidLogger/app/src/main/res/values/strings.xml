@@ -12,4 +12,12 @@
     <string name="etShortcut3">Comer</string>
     <string name="lblFabShorcut2">Añadir desplazamiento</string>
     <string name="lblFabShorcut3">Añadir comida</string>
+    <string name="etLanguage">Elegir idioma:</string>
+    <string name="tstSpanish">Has seleccionado Español</string>
+    <string name="tstEnglish">You have selected English</string>
+
+    <string-array name="languages">
+        <item>español</item>
+        <item>english</item>
+    </string-array>
 </resources>

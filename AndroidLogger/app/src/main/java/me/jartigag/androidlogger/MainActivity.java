@@ -1,11 +1,16 @@
 package me.jartigag.androidlogger;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.PowerManager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
@@ -17,6 +22,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -30,6 +36,27 @@ public class MainActivity extends Activity {
                 refreshLayout.setRefreshing(false);
             }
         });
+    }
+
+    @Override
+    protected void onPause() {
+        // WHEN THE SCREEN IS ABOUT TO TURN OFF
+        // Use the PowerManager to see if the screen is turning off
+        PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+        if (!pm.isScreenOn()) {
+            Log.d("depurando","SCREEN TURNED OFF");
+        }
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d("depurando","dentro de onResume");
+        PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+        if (pm.isScreenOn()) {
+            Log.d("depurando","SCREEN TURNED ON");
+        }
+        super.onResume();
     }
 
     public void refresh() {
